@@ -1,0 +1,116 @@
+{
+  "clip": "clip_01",
+  "frames": 190,
+  "iou_threshold": 0.5,
+  "pred_file": "/content/Day3-Lab/annotations/clip_01/gt.txt",
+  "gt_file": "/content/Day3-Lab/gold/clip_01/gt.txt",
+  "pred_label": "nhãn của bạn",
+  "gt_label": "gold clip_01",
+  "metrics": {
+    "HOTA": 0.7909,
+    "DetA": 0.7752,
+    "AssA": 0.8093,
+    "LocA": 0.8554,
+    "IDF1": 0.959,
+    "IDTP": 549,
+    "IDFP": 23,
+    "IDFN": 24,
+    "MOTA": 0.918,
+    "MOTP": 0.8407,
+    "IDSW": 0,
+    "FP": 23,
+    "FN": 24,
+    "GT_boxes": 573,
+    "PRED_boxes": 572
+  },
+  "gate": {
+    "checks": {
+      "IDF1": {
+        "value": 0.9589519650655022,
+        "required": 0.8,
+        "passed": true
+      },
+      "MOTA": {
+        "value": 0.9179755671902269,
+        "required": 0.75,
+        "passed": true
+      },
+      "MOTP": {
+        "value": 0.8406718627858235,
+        "required": 0.7,
+        "passed": true
+      }
+    },
+    "passed": true
+  },
+  "diagnostics": {
+    "missed_gt_tracks": [],
+    "fragmented_gt_tracks": [],
+    "partially_covered_gt_tracks": [
+      {
+        "gt_track": 5,
+        "covered": 47,
+        "gt_length": 60,
+        "ratio": 0.78
+      }
+    ],
+    "ghost_pred_tracks": [
+      {
+        "pred_track": 4,
+        "reason": "còn bbox sau khi track tham chiếu 4 đã rời khung",
+        "frames": [
+          149,
+          151
+        ],
+        "length": 3
+      },
+      {
+        "pred_track": 4,
+        "reason": "đã có bbox trước khi track tham chiếu 4 xuất hiện",
+        "frames": [
+          51,
+          53
+        ],
+        "length": 3
+      },
+      {
+        "pred_track": 8,
+        "reason": "còn bbox sau khi track tham chiếu 8 đã rời khung",
+        "frames": [
+          169,
+          171
+        ],
+        "length": 3
+      }
+    ],
+    "id_switches": [],
+    "loose_boxes": [
+      {
+        "frame": 112,
+        "gt_track": 6,
+        "pred_track": 6,
+        "iou": 0.521
+      },
+      {
+        "frame": 92,
+        "gt_track": 5,
+        "pred_track": 5,
+        "iou": 0.548
+      },
+      {
+        "frame": 113,
+        "gt_track": 6,
+        "pred_track": 6,
+        "iou": 0.58
+      },
+      {
+        "frame": 168,
+        "gt_track": 8,
+        "pred_track": 8,
+        "iou": 0.583
+      }
+    ],
+    "n_gt_tracks": 8,
+    "n_pred_tracks": 8
+  }
+}
